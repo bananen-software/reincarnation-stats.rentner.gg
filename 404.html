@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Encode the full path as a query param and redirect to root
+      const path = window.location.pathname + window.location.search;
+      window.location.replace(
+        '/?p=' + encodeURIComponent(path) + window.location.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
